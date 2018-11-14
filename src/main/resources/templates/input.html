@@ -1,0 +1,12 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>[[${firstTitle}]]</h1>
+
+    <form method="post" action="/" th:object="${helloWorldForm}">
+      <input type="text" name="content" th:value="*{getContent()}">
+      <input type="submit" value="送信">
+    </form>
+  </body>
+</html>
